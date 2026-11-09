@@ -149,3 +149,21 @@ form.optin input[type=text], form.optin input[type=email], form.optin input[type
 form.optin label.check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; color: var(--slate-600); font-size: 14px; line-height: 1.55; }
 form.optin label.check input { margin-top: 3px; flex: none; width: 18px; height: 18px; }
 .optional { font-weight: 400; color: var(--slate-500); }
+
+/* paper consent form */
+.paper { border: 1px solid var(--slate-300); border-radius: 8px; padding: 28px; margin: 20px 0; background: #fff; }
+.paper p { margin-bottom: 1.2em; }
+.paper .line { display: inline-block; min-width: 260px; width: 55%; border-bottom: 1px solid var(--slate-500); height: 1.1em; vertical-align: bottom; }
+.paper .line.short { width: 40%; min-width: 180px; }
+.paper .line.tiny { width: 20%; min-width: 100px; }
+.paper .box { background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 6px; padding: 14px 16px; }
+.paper .tick { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--slate-700); vertical-align: -2px; margin-right: 6px; }
+@media print {
+  header.top, footer, .noprint { display: none !important; }
+  .legal { padding: 0; }
+  .paper { border: 0; padding: 0; }
+}
+.contact .tenants { max-width: 760px; margin: 48px auto 0; text-align: center; font-size: 15px; color: var(--slate-300); border-top: 1px solid var(--slate-700); padding-top: 28px; }
+.contact .tenants a { color: var(--blue-400); }
+footer .copy a { color: var(--slate-400); }
+footer .copy + .copy { margin-top: 4px; }
