@@ -1,0 +1,8 @@
+/ /index.html 200
+/privacy /privacy.html 301
+/privacy/ /privacy.html 301
+/sms-terms /sms-terms.html 301
+/sms-terms/ /sms-terms.html 301
+/sms /sms-terms.html 301
+/contact /#contact 301
+/contact/ /#contact 301
